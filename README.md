@@ -1,4 +1,4 @@
-## Library Management ( Book Loan System)
+## Library Management with Spring Boot( Book Loan System)
 
 ERD Diagram:
 
