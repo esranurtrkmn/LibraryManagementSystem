@@ -2,5 +2,5 @@
 
 ERD Diagram:
 
-![Untitled](https://user-images.githubusercontent.com/34512770/128649746-4ca0bc91-1661-4306-b11b-711ab373322b.png)
+![Untitled (1)](https://user-images.githubusercontent.com/34512770/128649912-fb2d1823-3f94-4e96-a288-a75b4ab27ba1.png)
 
