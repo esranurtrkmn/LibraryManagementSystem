@@ -12,9 +12,8 @@ public interface BookRepository extends JpaRepository<Book,Integer>{
 
 	List<Book> findByBookAuthor(String bookAuthor);
 	
-	@Query("SELECT COUNT(DISTINCT bookTitle) FROM Book ")
-	List<Book> findByBookTitleCount();
+	int countByBookTitle(String bookTitle);
 	
-	@Query("SELECT COUNT(DISTINCT bookAuthor) FROM Book")
-	List<Book> findByBookAuthorCount();
+	@Query("SELECT COUNT(DISTINCT bookTitle) FROM Book")
+	int countBookTitle();
 }

@@ -52,20 +52,20 @@ public class BookManager implements BookService{
 
 
 	@Override
-	public DataResult<List<Book>> findByBookTitleCount() {
-		
-		return new SuccessDataResult<List<Book>>(this.bookRepo.findByBookTitleCount(),"Kitaplar başlık sayısı hesaplandı.");
-
+	public int countByBookTitle(String bookTitle) {
+		return this.bookRepo.countByBookTitle(bookTitle);
 	}
+
+
 
 	@Override
-	public DataResult<List<Book>> findByBookAuthorCount() {
-		
-		
-		return new SuccessDataResult<List<Book>>(this.bookRepo.findByBookAuthorCount(),"Yazar sayısı hesaplandı.");
-		
+	public int countBookTitle() {
+		return this.bookRepo.countBookTitle();
 	}
 
+
+
+	
 
 
 	

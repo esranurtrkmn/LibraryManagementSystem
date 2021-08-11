@@ -42,15 +42,16 @@ public class BookController {
 		return this.bookService.findByBookAuthor(bookAuthor);
 	}
 	
-	@GetMapping("/findbyauthorcount")
-	public DataResult<List<Book>> findByBookAuthorCount(){
-		return this.bookService.findByBookAuthorCount();
+	@GetMapping("/countbybooktitle")
+	public int countByBookTitle(@RequestParam String bookTitle){
+		return this.bookService.countByBookTitle(bookTitle);
 	}
 	
-	@GetMapping("/findbybooktitlecount")
-	public DataResult<List<Book>> findByBookTitleCount(){
-		return this.bookService.findByBookTitleCount();
+	@GetMapping("/countbooktitledistinct")
+	public int countBookTitle(){
+		return this.bookService.countBookTitle();
 	}
+
 	
 	
 }
