@@ -1,6 +1,12 @@
 
 ## Library Management with Spring Boot( Book Loan System)
 
+Technologies:
+
+- Java 
+- Spring 
+- PostgreSQL
+
 Description:
 
 - New books and new members are added to the library.
