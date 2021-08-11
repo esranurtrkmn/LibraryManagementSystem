@@ -3,7 +3,6 @@
 
 Technologies:
 
-- Java 
 - Spring 
 - Swagger Ui
 - PostgreSQL
