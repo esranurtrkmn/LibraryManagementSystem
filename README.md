@@ -3,14 +3,14 @@
 
 Description:
 
--New books and new members are added to the library.
+- New books and new members are added to the library.
 
--Member borrows books from the system. leaves when time is up.
+- Member borrows books from the system. leaves when time is up.
 
--The system sets the status of the book to true when the book is borrowed.
+- The system sets the status of the book to true when the book is borrowed.
 otherwise the book status is always false i.e. available.
 
--A book is borrowed by only one member.
+- A book is borrowed by only one member.
 
 ERD Diagram:
 
