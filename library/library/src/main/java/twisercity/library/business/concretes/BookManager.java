@@ -48,6 +48,26 @@ public class BookManager implements BookService{
 		
 		return new SuccessDataResult<List<Book>>(this.bookRepo.findByBookAuthor(bookAuthor),"Kitaplar yazarlara göre sıralandı.");
 	}
+
+
+
+	@Override
+	public DataResult<List<Book>> findByBookTitleCount() {
+		
+		return new SuccessDataResult<List<Book>>(this.bookRepo.findByBookTitleCount(),"Kitaplar başlık sayısı hesaplandı.");
+
+	}
+
+	@Override
+	public DataResult<List<Book>> findByBookAuthorCount() {
+		
+		
+		return new SuccessDataResult<List<Book>>(this.bookRepo.findByBookAuthorCount(),"Yazar sayısı hesaplandı.");
+		
+	}
+
+
+
 	
 	
 

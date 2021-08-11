@@ -1,6 +1,9 @@
 package twisercity.library.api;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,7 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import twisercity.library.business.abstracts.ReservationService;
+import twisercity.library.core.utilities.results.DataResult;
 import twisercity.library.core.utilities.results.Result;
+import twisercity.library.entities.concretes.Member;
 import twisercity.library.entities.concretes.Reservation;
 
 @RestController
@@ -33,4 +38,19 @@ public class ReservationController {
 		
 		return this.reservationService.updateIsBorrowed(isBorrowed, id);
 	}
+	
+	@GetMapping("/getall")
+    public DataResult<List<Reservation>> getAll() {
+       return this.reservationService.getAll();
+    }
+	
+	@GetMapping("/getallactive")
+    public DataResult<List<Reservation>> getAllActiveReservations() {
+       return this.reservationService.getAllActiveReservations();
+    }
+	
+	@GetMapping("/getallpassive")
+    public DataResult<List<Reservation>> getAllPassiveReservations() {
+       return this.reservationService.getAllPassiveReservations();
+    }
 }

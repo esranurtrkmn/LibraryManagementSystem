@@ -12,6 +12,10 @@ public interface BookService {
 	
 	public DataResult<List<Book>> findByBookAuthor(String bookAuthor);
 	
+	public DataResult<List<Book>> findByBookTitleCount();
+	
+	public DataResult<List<Book>> findByBookAuthorCount();
+	
 	public Result add(Book book);
 	
 	
